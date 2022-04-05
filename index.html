@@ -33,19 +33,42 @@
 			<aside class="forms-block forms">
 				<div class="form form-1">
 					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-							aria-expanded="false" aria-controls="collapseExample">
+						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
+							aria-expanded="false" aria-controls="multiCollapseExample1">
 							<input type="checkbox">
 							<span class="form--slider round"></span>
 						</label>
 						<p class="form--title">Infoblock oben Links</p>
 					</button>
 
-					<div class="form--items collapse" id="collapseExample">
+					<div class="form--items collapse" id="multiCollapseExample1">
 						<div class="form--item card-body">
-							Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
-							user activates the relevant
-							trigger.
+							<div class="form--inputs inputs">
+								<div class="input--title">E-Mail:</div>
+								<input class="input--email input" type="email" placeholder="info@mustermail.de" required="required">
+							</div>
+							<div class="form--inputs inputs">
+								<div class="input--title">Telefon:</div>
+								<input class="input--email input" type="tel" placeholder="+4901234567" required="required">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form form-2">
+					<button class="form--header">
+						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+							aria-expanded="false" aria-controls="multiCollapseExample2">
+							<input type="checkbox">
+							<span class="form--slider round"></span>
+						</label>
+						<p class="form--title">Infoblock oben Links</p>
+					</button>
+
+					<div class="form--items collapse" id="multiCollapseExample2">
+						<div class="form--item card-body">
+							<div class="form--imput imput">
+								<div class="input--title">E-Mail:</div>
+							</div>
 						</div>
 					</div>
 				</div>
