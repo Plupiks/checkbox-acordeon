@@ -49,6 +49,7 @@ body {
 
 .container {
   max-width: 1245px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -94,7 +95,8 @@ body {
 
 .form-page {
   display: flex;
-  padding: 25px 0;
+  justify-content: space-between;
+  padding-top: 25px;
 }
 
 .backlight-block {
