@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.min.css">
-	<title>Главная</title>
-</head>
+ 	<meta charset="UTF-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+ 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/scale.css" />
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
+ 	<link rel="stylesheet" href="css/style.min.css">
+ 	<title>Главная</title>
+ </head>
 
 <body>
 	<header class="header">
   <div class="container">
-    <div class="header--functions functions">
-      <button class="functions--item">
-        <img src="img/header/preview-icon.png" alt="preview button">
-      </button>
-      <button class="functions--item">
-        <img src="img/header/savedraft-icon.png" alt="preview button">
-      </button>
-      <button class="functions--item">
-        <img src="img/header/saveform-icon.png" alt="preview button">
-      </button>
+    <div class="header--body">
+      <div class="header--triangle"></div>
+      <div class="header--functions functions">
+        <button class="functions--item functions--item-pc">
+          <img src="img/header/preview-icon.png" alt="preview button">
+        </button>
+        <button class="functions--item functions--item-draft">
+          <img src="img/header/savedraft-icon.png" alt="preview button">
+        </button>
+        <button class="functions--item functions--item-form">
+          <img src="img/header/saveform-icon.png" alt="preview button">
+        </button>
+      </div>
     </div>
   </div>
 </header>
@@ -38,18 +45,23 @@
 							<input type="checkbox">
 							<span class="form--slider round"></span>
 						</label>
-						<p class="form--title">Infoblock oben Links</p>
+						<label class="form--title">Infoblock oben Links</label>
 					</button>
 
 					<div class="form--items collapse" id="multiCollapseExample1">
-						<div class="form--item card-body">
-							<div class="form--inputs inputs">
-								<div class="input--title">E-Mail:</div>
-								<input class="input--email input" type="email" placeholder="info@mustermail.de" required="required">
+						<div class="form--item">
+							<label class="input--title">E-Mail:</label>
+							<div class="form--input">
+								<input class="input" type="email" placeholder="info@mustermail.de" required="required">
+								<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
+									alt="hint icon">
 							</div>
-							<div class="form--inputs inputs">
-								<div class="input--title">Telefon:</div>
-								<input class="input--email input" type="tel" placeholder="+4901234567" required="required">
+						</div>
+						<div class="form--item">
+							<label class="input--title">Telefon:</label>
+							<div class="form--input">
+								<input class="input" type="tel" placeholder="+4901234567" required="required">
+								<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
 							</div>
 						</div>
 					</div>
@@ -61,13 +73,299 @@
 							<input type="checkbox">
 							<span class="form--slider round"></span>
 						</label>
-						<p class="form--title">Infoblock oben Links</p>
+						<label class="form--title">Firmenname</label>
 					</button>
 
 					<div class="form--items collapse" id="multiCollapseExample2">
-						<div class="form--item card-body">
-							<div class="form--imput imput">
-								<div class="input--title">E-Mail:</div>
+						<div class="form--item">
+							<label class="input--title">Firmenname:</label>
+							<div class="form--input">
+								<input class="input" type="text" placeholder="Namen des Unternehmens" required="required">
+								<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form form-3">
+					<button class="form--header">
+						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3"
+							aria-expanded="false" aria-controls="multiCollapseExample3">
+							<input type="checkbox">
+							<span class="form--slider round"></span>
+						</label>
+						<label class="form--title">Menü</label>
+					</button>
+
+					<div class="form--items collapse" id="multiCollapseExample3">
+						<div class="form--item">
+							<label class="input--title">Menü 1:</label>
+							<div class="form--input">
+								<input class="input" type="text" placeholder="Startseite" required="required">
+								<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+						<div class="form--item">
+							<label class="input--title">Menü 2:</label>
+							<div class="form--input">
+								<input class="input" type="text" placeholder="Webhosting" required="required">
+								<img class="form--hint" id="form--hint4" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+						<div class="form--item">
+							<label class="input--title">Menü 3:</label>
+							<div class="form--input">
+								<input class="input" type="text" placeholder="Kontakt" required="required">
+								<img class="form--hint" id="form--hint5" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form form-4">
+					<button class="form--header">
+						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4"
+							aria-expanded="false" aria-controls="multiCollapseExample4">
+							<input type="checkbox">
+							<span class="form--slider round"></span>
+						</label>
+						<label class="form--title">Foto oben</label>
+					</button>
+
+					<div class="form--items collapse" id="multiCollapseExample4">
+						<div class="form--item input--with-button">
+							<label class="input--title">Foto:</label>
+							<div class="form--input">
+								<div class="input--with-icon ">
+									<input class="input input-width" type="text" placeholder="" required="required" readonly>
+									<i class=""></i>
+								</div>
+								<button class="form--button">Datei Aaswählen</button>
+								<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+						<div class="form--item">
+							<label class="input--title">Titel:</label>
+							<div class="form--input">
+								<input class="input" type="text" placeholder="10 Minuten Webseite" required="required">
+								<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+						<div class="form--item">
+							<label class="input--title">Untertitel:</label>
+							<div class="form--input">
+								<input class="input" type="text" placeholder="Deine Website einfach und zeitsparend oh"
+									required="required">
+								<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form form-5">
+					<button class="form--header">
+						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5"
+							aria-expanded="false" aria-controls="multiCollapseExample5">
+							<input type="checkbox">
+							<span class="form--slider round"></span>
+						</label>
+						<label class="form--title">Section 1</label>
+					</button>
+
+					<div class="form--items collapse section" id="multiCollapseExample5">
+						<div class="section--block section--block-title">
+							<div class="form--item input--with-button">
+								<label class="input--title">Icon:</label>
+								<div class="form--input">
+									<div class="input--with-icon ">
+										<input class="input input-width" type="text" placeholder="" required="required" readonly>
+										<i class="fa-solid fa-image"></i>
+									</div>
+									<button class="form--button">Icon Aaswählen</button>
+									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="IHRE VORTEILE BEI UNS" required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Unteritel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Kein Einarbeiten in die Materie notwending"
+										required="required">
+									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+						<div class="section--block section--block-1">
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Titel" required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Text:</label>
+								<div class="form--textarea">
+									<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+								</textarea>
+									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+						<div class="section--block section--block-2">
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Titel" required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Text:</label>
+								<div class="form--textarea">
+									<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+								</textarea>
+									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+						<div class="section--block section--block-3">
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Titel" required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Text:</label>
+								<div class="form--textarea">
+									<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+								</textarea>
+									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form form-6">
+					<button class="form--header">
+						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
+							aria-expanded="false" aria-controls="multiCollapseExample6">
+							<input type="checkbox">
+							<span class="form--slider round"></span>
+						</label>
+						<label class="form--title">Section 2</label>
+					</button>
+
+					<div class="form--items collapse section" id="multiCollapseExample6">
+						<div class="section--block section--block-title">
+							<div class="form--item input--with-button">
+								<label class="input--title">Icon:</label>
+								<div class="form--input">
+									<div class="input--with-icon ">
+										<input class="input input-width" type="text" placeholder="" required="required" readonly>
+										<i class="fa-solid fa-image"></i>
+									</div>
+									<button class="form--button">Icon Aaswählen</button>
+									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Die Erstellung mehrer Websites"
+										required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Unteritel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Ganz leicht mit Step-by-Step erstellt"
+										required="required">
+									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+						<div class="section--block section--block-1">
+							<div class="form--item input--with-button">
+								<label class="input--title">Icon:</label>
+								<div class="form--input">
+									<div class="input--with-icon ">
+										<input class="input input-width" type="text" placeholder="" required="required" readonly>
+										<i class="fa-solid fa-image"></i>
+									</div>
+									<button class="form--button">Icon Aaswählen</button>
+									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Titel" required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">E-Mail:</label>
+								<div class="form--input">
+									<input class="input input-width" type="email" placeholder="info@mustermail.de" required="required">
+									<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
+										alt="hint icon">
+								</div>
+							</div>
+						</div>
+						<div class="section--block section--block-2">
+							<div class="form--item input--with-button">
+								<label class="input--title">Icon:</label>
+								<div class="form--input">
+									<div class="input--with-icon ">
+										<input class="input input-width" type="text" placeholder="" required="required" readonly>
+										<i class="fa-solid fa-image"></i>
+									</div>
+									<button class="form--button">Icon Aaswählen</button>
+									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input input-width" type="text" placeholder="Titel" required="required">
+									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Telefon:</label>
+								<div class="form--input">
+									<input class="input" type="tel" placeholder="+4901234567" required="required">
+									<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+						<div class="section--block section--block-3">
+							<div class="form--item input--with-button">
+								<label class="input--title">Foto:</label>
+								<div class="form--input">
+									<div class="input--with-icon ">
+										<input class="input input-width" type="text" placeholder="" required="required" readonly>
+										<i class=""></i>
+									</div>
+									<button class="form--button">Datei Aaswählen</button>
+									<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -82,6 +380,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
 		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
 	</script>
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 
