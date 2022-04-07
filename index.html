@@ -15,9 +15,11 @@
 
 <body>
 	<header class="header">
+  <a class="header--logo" href="https://10minutenwebseite.de/"><span class="logo--text">Minuten Webseite</span></a>
   <div class="container">
     <div class="header--body">
-      <div class="header--triangle"></div>
+      <a href="https://10minutenwebseite.de/shop/" class="header--triangle"></a>
+      <p class="header--layout-name">Design-B03-demo</p>
       <div class="header--functions functions">
         <button class="functions--item functions--item-pc">
           <img src="img/header/preview-icon.png" alt="preview button">
@@ -33,329 +35,104 @@
   </div>
 </header>
 	<main>
-		<div class="container form-page">
-			<div class="backlight-block">
-				<img src="img/blacklight-block-img.png" alt="blacklight block img" />
-			</div>
-			<aside class="forms-block forms">
-				<div class="form form-1">
-					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
-							aria-expanded="false" aria-controls="multiCollapseExample1">
-							<input type="checkbox">
-							<span class="form--slider round"></span>
-						</label>
-						<label class="form--title">Infoblock oben Links</label>
-					</button>
+		<div class="container">
+			<div class="form-page">
+				<img class="backlight-block" src="img/blacklight-block-img.png" alt="blacklight block img" />
+				<aside class="forms-block forms">
+					<div class="form form-1">
+						<button class="form--header">
+							<label class="form--switch" type="button" data-bs-toggle="collapse"
+								data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+								<input type="checkbox">
+								<span class="form--slider round"></span>
+							</label>
+							<label class="form--title light-box-0">Infoblock oben Links</label>
+						</button>
 
-					<div class="form--items collapse" id="multiCollapseExample1">
-						<div class="form--item">
-							<label class="input--title">E-Mail:</label>
-							<div class="form--input">
-								<input class="input" type="email" placeholder="info@mustermail.de" required="required">
-								<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
-									alt="hint icon">
-							</div>
-						</div>
-						<div class="form--item">
-							<label class="input--title">Telefon:</label>
-							<div class="form--input">
-								<input class="input" type="tel" placeholder="+4901234567" required="required">
-								<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form form-2">
-					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
-							aria-expanded="false" aria-controls="multiCollapseExample2">
-							<input type="checkbox">
-							<span class="form--slider round"></span>
-						</label>
-						<label class="form--title">Firmenname</label>
-					</button>
-
-					<div class="form--items collapse" id="multiCollapseExample2">
-						<div class="form--item">
-							<label class="input--title">Firmenname:</label>
-							<div class="form--input">
-								<input class="input" type="text" placeholder="Namen des Unternehmens" required="required">
-								<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form form-3">
-					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3"
-							aria-expanded="false" aria-controls="multiCollapseExample3">
-							<input type="checkbox">
-							<span class="form--slider round"></span>
-						</label>
-						<label class="form--title">Menü</label>
-					</button>
-
-					<div class="form--items collapse" id="multiCollapseExample3">
-						<div class="form--item">
-							<label class="input--title">Menü 1:</label>
-							<div class="form--input">
-								<input class="input" type="text" placeholder="Startseite" required="required">
-								<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-						<div class="form--item">
-							<label class="input--title">Menü 2:</label>
-							<div class="form--input">
-								<input class="input" type="text" placeholder="Webhosting" required="required">
-								<img class="form--hint" id="form--hint4" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-						<div class="form--item">
-							<label class="input--title">Menü 3:</label>
-							<div class="form--input">
-								<input class="input" type="text" placeholder="Kontakt" required="required">
-								<img class="form--hint" id="form--hint5" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form form-4">
-					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4"
-							aria-expanded="false" aria-controls="multiCollapseExample4">
-							<input type="checkbox">
-							<span class="form--slider round"></span>
-						</label>
-						<label class="form--title">Foto oben</label>
-					</button>
-
-					<div class="form--items collapse" id="multiCollapseExample4">
-						<div class="form--item input--with-button">
-							<label class="input--title">Foto:</label>
-							<div class="form--input">
-								<div class="input--with-icon ">
-									<input class="input input-width" type="text" placeholder="" required="required" readonly>
-									<i class=""></i>
-								</div>
-								<button class="form--button">Datei Aaswählen</button>
-								<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-						<div class="form--item">
-							<label class="input--title">Titel:</label>
-							<div class="form--input">
-								<input class="input" type="text" placeholder="10 Minuten Webseite" required="required">
-								<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-						<div class="form--item">
-							<label class="input--title">Untertitel:</label>
-							<div class="form--input">
-								<input class="input" type="text" placeholder="Deine Website einfach und zeitsparend oh"
-									required="required">
-								<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form form-5">
-					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5"
-							aria-expanded="false" aria-controls="multiCollapseExample5">
-							<input type="checkbox">
-							<span class="form--slider round"></span>
-						</label>
-						<label class="form--title">Section 1</label>
-					</button>
-
-					<div class="form--items collapse section" id="multiCollapseExample5">
-						<div class="section--block section--block-title">
-							<div class="form--item input--with-button">
-								<label class="input--title">Icon:</label>
-								<div class="form--input">
-									<div class="input--with-icon ">
-										<input class="input input-width" type="text" placeholder="" required="required" readonly>
-										<i class="fa-solid fa-image"></i>
-									</div>
-									<button class="form--button">Icon Aaswählen</button>
-									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="IHRE VORTEILE BEI UNS" required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Unteritel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Kein Einarbeiten in die Materie notwending"
-										required="required">
-									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-						<div class="section--block section--block-1">
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Titel" required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Text:</label>
-								<div class="form--textarea">
-									<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-								</textarea>
-									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-						<div class="section--block section--block-2">
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Titel" required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Text:</label>
-								<div class="form--textarea">
-									<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-								</textarea>
-									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-						<div class="section--block section--block-3">
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Titel" required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Text:</label>
-								<div class="form--textarea">
-									<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-								</textarea>
-									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form form-6">
-					<button class="form--header">
-						<label class="form--switch" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
-							aria-expanded="false" aria-controls="multiCollapseExample6">
-							<input type="checkbox">
-							<span class="form--slider round"></span>
-						</label>
-						<label class="form--title">Section 2</label>
-					</button>
-
-					<div class="form--items collapse section" id="multiCollapseExample6">
-						<div class="section--block section--block-title">
-							<div class="form--item input--with-button">
-								<label class="input--title">Icon:</label>
-								<div class="form--input">
-									<div class="input--with-icon ">
-										<input class="input input-width" type="text" placeholder="" required="required" readonly>
-										<i class="fa-solid fa-image"></i>
-									</div>
-									<button class="form--button">Icon Aaswählen</button>
-									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Die Erstellung mehrer Websites"
-										required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Unteritel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Ganz leicht mit Step-by-Step erstellt"
-										required="required">
-									<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-						<div class="section--block section--block-1">
-							<div class="form--item input--with-button">
-								<label class="input--title">Icon:</label>
-								<div class="form--input">
-									<div class="input--with-icon ">
-										<input class="input input-width" type="text" placeholder="" required="required" readonly>
-										<i class="fa-solid fa-image"></i>
-									</div>
-									<button class="form--button">Icon Aaswählen</button>
-									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Titel" required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
+						<div class="form--items collapse" id="multiCollapseExample1">
 							<div class="form--item">
 								<label class="input--title">E-Mail:</label>
 								<div class="form--input">
-									<input class="input input-width" type="email" placeholder="info@mustermail.de" required="required">
-									<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
+									<input class="input" type="email" placeholder="info@mustermail.de" required="required">
+									<img class="form--hint light-box-1" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
 										alt="hint icon">
-								</div>
-							</div>
-						</div>
-						<div class="section--block section--block-2">
-							<div class="form--item input--with-button">
-								<label class="input--title">Icon:</label>
-								<div class="form--input">
-									<div class="input--with-icon ">
-										<input class="input input-width" type="text" placeholder="" required="required" readonly>
-										<i class="fa-solid fa-image"></i>
-									</div>
-									<button class="form--button">Icon Aaswählen</button>
-									<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Titel" required="required">
-									<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Telefon:</label>
 								<div class="form--input">
 									<input class="input" type="tel" placeholder="+4901234567" required="required">
-									<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
+									<img class="form--hint scale-subtle light-box-2" id="form--hint2" src="img/hint-icon.png"
+										alt="hint icon">
 								</div>
 							</div>
 						</div>
-						<div class="section--block section--block-3">
+					</div>
+					<div class="form form-2">
+						<button class="form--header">
+							<label class="form--switch" type="button" data-bs-toggle="collapse"
+								data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+								<input type="checkbox">
+								<span class="form--slider round"></span>
+							</label>
+							<label class="form--title light-box-3">Firmenname</label>
+						</button>
+
+						<div class="form--items collapse" id="multiCollapseExample2">
+							<div class="form--item">
+								<label class="input--title">Firmenname:</label>
+								<div class="form--input">
+									<input class="input light-box-4" type="text" placeholder="Namen des Unternehmens" required="required">
+									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form form-3">
+						<button class="form--header">
+							<label class="form--switch" type="button" data-bs-toggle="collapse"
+								data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+								<input type="checkbox">
+								<span class="form--slider round"></span>
+							</label>
+							<label class="form--title light-box-5">Menü</label>
+						</button>
+
+						<div class="form--items collapse" id="multiCollapseExample3">
+							<div class="form--item">
+								<label class="input--title">Menü 1:</label>
+								<div class="form--input">
+									<input class="input" type="text" placeholder="Startseite" required="required">
+									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Menü 2:</label>
+								<div class="form--input">
+									<input class="input" type="text" placeholder="Webhosting" required="required">
+									<img class="form--hint" id="form--hint4" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Menü 3:</label>
+								<div class="form--input">
+									<input class="input" type="text" placeholder="Kontakt" required="required">
+									<img class="form--hint" id="form--hint5" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form form-4">
+						<button class="form--header">
+							<label class="form--switch" type="button" data-bs-toggle="collapse"
+								data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
+								<input type="checkbox">
+								<span class="form--slider round"></span>
+							</label>
+							<label class="form--title">Foto oben</label>
+						</button>
+
+						<div class="form--items collapse" id="multiCollapseExample4">
 							<div class="form--item input--with-button">
 								<label class="input--title">Foto:</label>
 								<div class="form--input">
@@ -367,12 +144,248 @@
 									<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
+							<div class="form--item">
+								<label class="input--title">Titel:</label>
+								<div class="form--input">
+									<input class="input" type="text" placeholder="10 Minuten Webseite" required="required">
+									<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
+							<div class="form--item">
+								<label class="input--title">Untertitel:</label>
+								<div class="form--input">
+									<input class="input" type="text" placeholder="Deine Website einfach und zeitsparend oh"
+										required="required">
+									<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</aside>
+					<div class="form form-5">
+						<button class="form--header">
+							<label class="form--switch" type="button" data-bs-toggle="collapse"
+								data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
+								<input type="checkbox">
+								<span class="form--slider round"></span>
+							</label>
+							<label class="form--title">Section 1</label>
+						</button>
+
+						<div class="form--items collapse section" id="multiCollapseExample5">
+							<div class="section--block section--block-title">
+								<div class="form--item input--with-button">
+									<label class="input--title">Icon:</label>
+									<div class="form--input">
+										<div class="input--with-icon ">
+											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<i class="fa-solid fa-image"></i>
+										</div>
+										<button class="form--button">Icon Aaswählen</button>
+										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="IHRE VORTEILE BEI UNS"
+											required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Unteritel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text"
+											placeholder="Kein Einarbeiten in die Materie notwending" required="required">
+										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+							<div class="section--block section--block-1">
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Text:</label>
+									<div class="form--textarea">
+										<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+								</textarea>
+										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+							<div class="section--block section--block-2">
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Text:</label>
+									<div class="form--textarea">
+										<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+								</textarea>
+										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+							<div class="section--block section--block-3">
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Text:</label>
+									<div class="form--textarea">
+										<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+								</textarea>
+										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form form-6">
+						<button class="form--header">
+							<label class="form--switch" type="button" data-bs-toggle="collapse"
+								data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">
+								<input type="checkbox">
+								<span class="form--slider round"></span>
+							</label>
+							<label class="form--title">Section 2</label>
+						</button>
+
+						<div class="form--items collapse section" id="multiCollapseExample6">
+							<div class="section--block section--block-title">
+								<div class="form--item input--with-button">
+									<label class="input--title">Icon:</label>
+									<div class="form--input">
+										<div class="input--with-icon ">
+											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<i class="fa-solid fa-image"></i>
+										</div>
+										<button class="form--button">Icon Aaswählen</button>
+										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Die Erstellung mehrer Websites"
+											required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Unteritel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Ganz leicht mit Step-by-Step erstellt"
+											required="required">
+										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+							<div class="section--block section--block-1">
+								<div class="form--item input--with-button">
+									<label class="input--title">Icon:</label>
+									<div class="form--input">
+										<div class="input--with-icon ">
+											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<i class="fa-solid fa-image"></i>
+										</div>
+										<button class="form--button">Icon Aaswählen</button>
+										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">E-Mail:</label>
+									<div class="form--input">
+										<input class="input input-width" type="email" placeholder="info@mustermail.de" required="required">
+										<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
+											alt="hint icon">
+									</div>
+								</div>
+							</div>
+							<div class="section--block section--block-2">
+								<div class="form--item input--with-button">
+									<label class="input--title">Icon:</label>
+									<div class="form--input">
+										<div class="input--with-icon ">
+											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<i class="fa-solid fa-image"></i>
+										</div>
+										<button class="form--button">Icon Aaswählen</button>
+										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Titel:</label>
+									<div class="form--input">
+										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+								<div class="form--item">
+									<label class="input--title">Telefon:</label>
+									<div class="form--input">
+										<input class="input input-width" type="tel" placeholder="+4901234567" required="required">
+										<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+							<div class="section--block section--block-3">
+								<div class="form--item input--with-button">
+									<label class="input--title">Foto:</label>
+									<div class="form--input">
+										<div class="input--with-icon ">
+											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<i class=""></i>
+										</div>
+										<button class="form--button">Datei Aaswählen</button>
+										<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+
 		</div>
 	</main>
+	<div class="highlights-boxes">
+  <div class="area-block-info-0" data-number="0" id="block-highlight-area"></div>
+  <div class="area-block-info-1" data-number="1" id="block-highlight-area"></div>
+  <div class="area-block-info-2" data-number="2" id="block-highlight-area"></div>
+  <div class="area-block-info-3" data-number="3" id="block-highlight-area"></div>
+  <div class="area-block-info-4" data-number="4" id="block-highlight-area"></div>
+  <div class="area-block-info-5" data-number="5" id="block-highlight-area"></div>
+</div>
 	<footer></footer>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
