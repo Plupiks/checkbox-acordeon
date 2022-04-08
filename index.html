@@ -14,7 +14,7 @@
  </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
   <a class="header--logo" href="https://10minutenwebseite.de/"><span class="logo--text">Minuten Webseite</span></a>
   <div class="container">
     <div class="header--body">
@@ -146,14 +146,14 @@
 							<div class="form--item">
 								<label class="input--title">Titel:</label>
 								<div class="form--input">
-									<input class="input" type="text" placeholder="10 Minuten Webseite" required="required">
+									<input class="input input-width" type="text" placeholder="10 Minuten Webseite" required="required">
 									<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Untertitel:</label>
 								<div class="form--input">
-									<input class="input" type="text" placeholder="Deine Website einfach und zeitsparend oh"
+									<input class="input input-width" type="text" placeholder="Deine Website einfach und zeitsparend oh"
 										required="required">
 									<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
 								</div>
@@ -376,8 +376,7 @@
 			</div>
 
 		</div>
-	</main>
-	<div class="highlights-boxes">
+		<div class="highlights-boxes">
   <div class="area-block-info-0" data-number="0" id="block-highlight-area"></div>
   <div class="area-block-info-1" data-number="1" id="block-highlight-area"></div>
   <div class="area-block-info-2" data-number="2" id="block-highlight-area"></div>
@@ -385,6 +384,7 @@
   <div class="area-block-info-4" data-number="4" id="block-highlight-area"></div>
   <div class="area-block-info-5" data-number="5" id="block-highlight-area"></div>
 </div>
+	</main>
 	<footer></footer>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -394,6 +394,8 @@
 	</script>
 	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
 	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="js/app.min.js"></script>
 </body>
 

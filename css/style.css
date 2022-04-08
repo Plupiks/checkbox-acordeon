@@ -61,8 +61,10 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   background-color: #1c9ea8;
+  width: 100%;
+  z-index: 11;
 }
 .header::after {
   position: absolute;
@@ -201,7 +203,7 @@ body {
 .form-page {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 98px;
 }
 
 .backlight-block {
@@ -242,7 +244,7 @@ aside::-webkit-scrollbar-thumb {
 .forms-block {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
   flex: 0 1 400px;
   padding: 0 18px;
   min-width: 310px;
@@ -256,7 +258,16 @@ aside::-webkit-scrollbar-thumb {
 .section--block {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
+}
+
+.highlights-boxes {
+  display: block;
+}
+@media only screen and (max-width: 1150px) {
+  .highlights-boxes {
+    display: none;
+  }
 }
 
 .form--header {
@@ -271,11 +282,6 @@ aside::-webkit-scrollbar-thumb {
   outline: none;
   border: none;
   background-color: #eaeaea;
-}
-
-.form--items {
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
 }
 
 .form--switch {
@@ -349,7 +355,9 @@ input:checked + .form--slider:before {
   background-color: #eaeaea;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 2px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .form--item {
@@ -447,9 +455,8 @@ input:checked + .form--slider:before {
 }
 
 .textarea {
-  resize: none;
   width: calc(100% - 20px);
-  height: 110px;
+  min-height: 110px;
   border-radius: 3px;
   outline: none;
   border: 2px solid #c8ccd2;
