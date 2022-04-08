@@ -7,14 +7,118 @@
  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
  		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
  	<link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/scale.css" />
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//vendor/twbs/bootstrap/dist/css/bootstrap.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//vendor/components/font-awesome/css/fontawesome.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//vendor/components/font-awesome/css/brands.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//vendor/components/font-awesome/css/solid.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/css/base/jquery.fonticonpicker.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/css/themes/grey-theme/jquery.fonticonpicker.grey.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/css/themes/dark-grey-theme/jquery.fonticonpicker.darkgrey.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/css/themes/bootstrap-theme/jquery.fonticonpicker.bootstrap.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/css/themes/inverted-theme/jquery.fonticonpicker.inverted.min.css" />
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/fontello/css/fontello.css" />
+ 	<link rel="stylesheet"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/magnific-popup/magnific-popup.css">
+ 	<link rel="stylesheet"
+ 		href="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/style.css?ver=2.0.2">
+ 	<link rel="stylesheet" type="text/css"
+ 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+ 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  	<link rel="stylesheet" href="css/style.min.css">
- 	<title>Главная</title>
+ 	<style>
+ 		.preloader {
+ 			background-color: rgba(0, 0, 0, .7);
+ 			color: #fff;
+ 			display: none;
+ 			left: 0;
+ 			position: fixed;
+ 			top: 0;
+ 			height: 100%;
+ 			width: 100%;
+ 			z-index: 999;
+ 			text-align: center;
+ 			background: #e3ecfd url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/free-gif-preloaders-psds-03.gif) no-repeat;
+ 			opacity: .7;
+ 			background-position: center;
+ 		}
+
+ 		.preloader.active {
+ 			display: block;
+ 		}
+
+ 		.form-group.error::after {
+ 			content: '';
+ 			position: absolute;
+ 			bottom: 12px;
+ 			left: 20px;
+ 			height: 16px;
+ 			width: 16px;
+ 			background-image: url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/error.png);
+ 		}
+
+ 		.delete-uploaded-file {
+ 			height: 24px;
+ 			width: 24px;
+ 			background: url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/delete.png) center center no-repeat;
+ 			position: absolute;
+ 			left: 0px;
+ 			top: 30px;
+ 		}
+
+ 		.qsb-mfp-close {
+ 			height: 24px;
+ 			width: 24px;
+ 			background: url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/delete.png) center center no-repeat !important;
+ 			position: absolute;
+ 			right: 0px;
+ 			top: 0;
+ 		}
+ 	</style>
+ 	<title>Quick Site Builder - Webseiten-Editor</title>
  </head>
 
 <body>
-	<header class="header" id="header">
+	<div class="preloader"></div>
+	<div class="nav-box">
+		<a href="#" onclick="javascript:get_tips(670);" class="nav-button">
+			<span>Impressum und Datenschutzerklärung</span>
+			<div class="icon">
+				<i class="icon-quote-left"></i>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:get_tips(400);" class="nav-button">
+			<span>Kein Hosting – keine Domain – keine Webpräsenz!</span>
+			<div class="icon">
+				<i class="icon-upload"></i>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:get_tips(685);" class="nav-button">
+			<span>Vorschau - Speichern - Bearbeiten</span>
+			<div class="icon">
+				<i class="icon-help-circled"></i>
+			</div>
+		</a>
+		<a href="#" onclick="javascript:get_tips(546);" class="nav-button">
+			<span>Website – Step-by-Step</span>
+			<div class="icon">
+				<i class="icon-info-circled"></i>
+			</div>
+		</a>
+	</div>
+	<main>
+		<input type="hidden" id="checkout-page-url" value="https://10minutenwebseite.de/kasse/">
+		<input type="hidden" id="cart-page-url" value="https://10minutenwebseite.de/warenkorb/">
+		<header class="header" id="header">
   <a class="header--logo" href="https://10minutenwebseite.de/"><span class="logo--text">Minuten Webseite</span></a>
   <div class="container">
     <div class="header--body">
@@ -34,8 +138,8 @@
     </div>
   </div>
 </header>
-	<main>
-		<div class="container">
+		<div id="divLoading"></div>
+		<div class="container container--main">
 			<div class="form-page">
 				<img class="backlight-block" src="img/blacklight-block-img.png" alt="blacklight block img" />
 				<aside class="forms-block forms">
@@ -46,14 +150,17 @@
 								<input type="checkbox">
 								<span class="form--slider round"></span>
 							</label>
-							<label class="form--title light-box-0">Infoblock oben Links</label>
+							<div class="light-box-0 light-box" style="width: 100%; text-align: left;">
+								<label class="form--title">Infoblock oben Links</label>
+							</div>
 						</button>
 
 						<div class="form--items collapse" id="multiCollapseExample1">
 							<div class="form--item">
 								<label class="input--title">E-Mail:</label>
 								<div class="form--input">
-									<input class="input light-box-1" type="email" placeholder="info@mustermail.de" required="required">
+									<input class="input light-box-1 light-box" type="email" placeholder="info@mustermail.de"
+										required="required">
 									<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
 										alt="hint icon">
 								</div>
@@ -61,7 +168,7 @@
 							<div class="form--item">
 								<label class="input--title">Telefon:</label>
 								<div class="form--input">
-									<input class="input light-box-2" type="tel" placeholder="+4901234567" required="required">
+									<input class="input light-box-2 light-box" type="tel" placeholder="+4901234567" required="required">
 									<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
@@ -74,14 +181,17 @@
 								<input type="checkbox">
 								<span class="form--slider round"></span>
 							</label>
-							<label class="form--title light-box-3">Firmenname</label>
+							<div class="light-box-3 light-box" style="width: 100%; text-align: left;">
+								<label class="form--title">Firmenname</label>
+							</div>
 						</button>
 
 						<div class="form--items collapse" id="multiCollapseExample2">
 							<div class="form--item">
 								<label class="input--title">Firmenname:</label>
 								<div class="form--input">
-									<input class="input light-box-4" type="text" placeholder="Namen des Unternehmens" required="required">
+									<input class="input light-box-4 light-box" type="text" placeholder="Namen des Unternehmens"
+										required="required">
 									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
@@ -94,28 +204,30 @@
 								<input type="checkbox">
 								<span class="form--slider round"></span>
 							</label>
-							<label class="form--title light-box-5">Menü</label>
+							<div class="light-box-5 light-box" style="width: 100%; text-align: left;">
+								<label class="form--title">Menü</label>
+							</div>
 						</button>
 
 						<div class="form--items collapse" id="multiCollapseExample3">
 							<div class="form--item">
 								<label class="input--title">Menü 1:</label>
 								<div class="form--input">
-									<input class="input" type="text" placeholder="Startseite" required="required">
+									<input class="input light-box-6 light-box" type="text" placeholder="Startseite" required="required">
 									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Menü 2:</label>
 								<div class="form--input">
-									<input class="input" type="text" placeholder="Webhosting" required="required">
+									<input class="input light-box-7 light-box" type="text" placeholder="Webhosting" required="required">
 									<img class="form--hint" id="form--hint4" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Menü 3:</label>
 								<div class="form--input">
-									<input class="input" type="text" placeholder="Kontakt" required="required">
+									<input class="input light-box-8 light-box" type="text" placeholder="Kontakt" required="required">
 									<img class="form--hint" id="form--hint5" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
@@ -128,7 +240,9 @@
 								<input type="checkbox">
 								<span class="form--slider round"></span>
 							</label>
-							<label class="form--title">Foto oben</label>
+							<div class="light-box-9 light-box" style="width: 100%; text-align: left;">
+								<label class="form--title">Foto oben</label>
+							</div>
 						</button>
 
 						<div class="form--items collapse" id="multiCollapseExample4">
@@ -136,7 +250,8 @@
 								<label class="input--title">Foto:</label>
 								<div class="form--input">
 									<div class="input--with-icon ">
-										<input class="input input-width" type="text" placeholder="" required="required" readonly>
+										<input class="input light-box-10 light-box input-width" type="text" placeholder=""
+											required="required" readonly>
 										<i class=""></i>
 									</div>
 									<button class="form--button">Datei Aaswählen</button>
@@ -146,15 +261,16 @@
 							<div class="form--item">
 								<label class="input--title">Titel:</label>
 								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="10 Minuten Webseite" required="required">
+									<input class="input input-width light-box-11 light-box" type="text" placeholder="10 Minuten Webseite"
+										required="required">
 									<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Untertitel:</label>
 								<div class="form--input">
-									<input class="input input-width" type="text" placeholder="Deine Website einfach und zeitsparend oh"
-										required="required">
+									<input class="input input-width light-box-12 light-box" type="text"
+										placeholder="Deine Website einfach und zeitsparend oh" required="required">
 									<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
 								</div>
 							</div>
@@ -167,7 +283,9 @@
 								<input type="checkbox">
 								<span class="form--slider round"></span>
 							</label>
-							<label class="form--title">Section 1</label>
+							<div class="light-box-13 light-box" style="width: 100%; text-align: left;">
+								<label class="form--title">Section 1</label>
+							</div>
 						</button>
 
 						<div class="form--items collapse section" id="multiCollapseExample5">
@@ -176,7 +294,8 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<input class="input input-width light-box-14 light-box" type="text" placeholder=""
+												required="required" readonly>
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
@@ -186,15 +305,15 @@
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="IHRE VORTEILE BEI UNS"
-											required="required">
+										<input class="input input-width light-box-15 light-box" type="text"
+											placeholder="IHRE VORTEILE BEI UNS" required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Unteritel:</label>
 									<div class="form--input">
-										<input class="input input-width" type="text"
+										<input class="input input-width light-box-16 light-box" type="text"
 											placeholder="Kein Einarbeiten in die Materie notwending" required="required">
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
@@ -202,60 +321,39 @@
 							</div>
 							<div class="section--block section--block-1">
 								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Titel" required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
 									<label class="input--title">Text:</label>
 									<div class="form--textarea">
-										<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-								</textarea>
+										<textarea class="textarea light-box-17 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+										</textarea>
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
 							</div>
 							<div class="section--block section--block-2">
 								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Titel" required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
 									<label class="input--title">Text:</label>
 									<div class="form--textarea">
-										<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-								</textarea>
+										<textarea class="textarea light-box-18 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+										</textarea>
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
 							</div>
 							<div class="section--block section--block-3">
 								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Titel" required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
 									<label class="input--title">Text:</label>
 									<div class="form--textarea">
-										<textarea class="textarea">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-									die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-									begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-									unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-								</textarea>
+										<textarea class="textarea light-box-19 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
+											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
+											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
+											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
+										</textarea>
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
@@ -269,7 +367,9 @@
 								<input type="checkbox">
 								<span class="form--slider round"></span>
 							</label>
-							<label class="form--title">Section 2</label>
+							<div class="light-box-20 light-box" style="width: 100%; text-align: left;">
+								<label class="form--title">Section 2</label>
+							</div>
 						</button>
 
 						<div class="form--items collapse section" id="multiCollapseExample6">
@@ -278,7 +378,8 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<input class="input input-width light-box-21 light-box" type="text" placeholder=""
+												required="required" readonly>
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
@@ -288,16 +389,16 @@
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Die Erstellung mehrer Websites"
-											required="required">
+										<input class="input input-width light-box-22 light-box" type="text"
+											placeholder="Die Erstellung mehrer Websites" required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Unteritel:</label>
 									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Ganz leicht mit Step-by-Step erstellt"
-											required="required">
+										<input class="input input-width light-box-23 light-box" type="text"
+											placeholder="Ganz leicht mit Step-by-Step erstellt" required="required">
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
@@ -307,7 +408,8 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<input class="input input-width light-box-24 light-box" type="text" placeholder=""
+												required="required" readonly>
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
@@ -317,14 +419,16 @@
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<input class="input input-width light-box-25 light-box" type="text" placeholder="Titel"
+											required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
 								<div class="form--item">
 									<label class="input--title">E-Mail:</label>
 									<div class="form--input">
-										<input class="input input-width" type="email" placeholder="info@mustermail.de" required="required">
+										<input class="input input-width light-box-26 light-box" type="email"
+											placeholder="info@mustermail.de" required="required">
 										<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
 											alt="hint icon">
 									</div>
@@ -335,7 +439,8 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<input class="input input-width light-box-27 light-box" type="text" placeholder=""
+												required="required" readonly>
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
@@ -345,14 +450,16 @@
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width" type="text" placeholder="Titel" required="required">
+										<input class="input input-width light-box-28 light-box" type="text" placeholder="Titel"
+											required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Telefon:</label>
 									<div class="form--input">
-										<input class="input input-width" type="tel" placeholder="+4901234567" required="required">
+										<input class="input input-width light-box-29 light-box" type="tel" placeholder="+4901234567"
+											required="required">
 										<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
 									</div>
 								</div>
@@ -362,7 +469,8 @@
 									<label class="input--title">Foto:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width" type="text" placeholder="" required="required" readonly>
+											<input class="input input-width light-box-30 light-box" type="text" placeholder=""
+												required="required" readonly>
 											<i class=""></i>
 										</div>
 										<button class="form--button">Datei Aaswählen</button>
@@ -374,29 +482,147 @@
 					</div>
 				</aside>
 			</div>
-
-		</div>
-		<div class="highlights-boxes">
-  <div class="area-block-info-0" data-number="0" id="block-highlight-area"></div>
-  <div class="area-block-info-1" data-number="1" id="block-highlight-area"></div>
-  <div class="area-block-info-2" data-number="2" id="block-highlight-area"></div>
-  <div class="area-block-info-3" data-number="3" id="block-highlight-area"></div>
-  <div class="area-block-info-4" data-number="4" id="block-highlight-area"></div>
-  <div class="area-block-info-5" data-number="5" id="block-highlight-area"></div>
+			<div class="highlights-boxes">
+  <div class="container">
+    <div class="area-block-info-0" data-number="0" id="block-highlight-area"></div>
+    <div class="area-block-info-1" data-number="1" id="block-highlight-area"></div>
+    <div class="area-block-info-2" data-number="2" id="block-highlight-area"></div>
+    <div class="area-block-info-3" data-number="3" id="block-highlight-area"></div>
+    <div class="area-block-info-4" data-number="4" id="block-highlight-area"></div>
+    <div class="area-block-info-5" data-number="5" id="block-highlight-area"></div>
+    <div class="area-block-info-6" data-number="6" id="block-highlight-area"></div>
+    <div class="area-block-info-7" data-number="7" id="block-highlight-area"></div>
+    <div class="area-block-info-8" data-number="8" id="block-highlight-area"></div>
+    <div class="area-block-info-9" data-number="9" id="block-highlight-area"></div>
+    <div class="area-block-info-10" data-number="10" id="block-highlight-area"></div>
+    <div class="area-block-info-11" data-number="11" id="block-highlight-area"></div>
+    <div class="area-block-info-12" data-number="12" id="block-highlight-area"></div>
+    <div class="area-block-info-13" data-number="13" id="block-highlight-area"></div>
+    <div class="area-block-info-14" data-number="14" id="block-highlight-area"></div>
+    <div class="area-block-info-15" data-number="15" id="block-highlight-area"></div>
+    <div class="area-block-info-16" data-number="16" id="block-highlight-area"></div>
+    <div class="area-block-info-17" data-number="17" id="block-highlight-area"></div>
+    <div class="area-block-info-18" data-number="18" id="block-highlight-area"></div>
+    <div class="area-block-info-19" data-number="19" id="block-highlight-area"></div>
+    <div class="area-block-info-20" data-number="20" id="block-highlight-area"></div>
+    <div class="area-block-info-21" data-number="21" id="block-highlight-area"></div>
+    <div class="area-block-info-22" data-number="22" id="block-highlight-area"></div>
+    <div class="area-block-info-23" data-number="23" id="block-highlight-area"></div>
+    <div class="area-block-info-24" data-number="24" id="block-highlight-area"></div>
+    <div class="area-block-info-25" data-number="25" id="block-highlight-area"></div>
+    <div class="area-block-info-26" data-number="26" id="block-highlight-area"></div>
+    <div class="area-block-info-27" data-number="27" id="block-highlight-area"></div>
+    <div class="area-block-info-28" data-number="28" id="block-highlight-area"></div>
+    <div class="area-block-info-29" data-number="29" id="block-highlight-area"></div>
+    <div class="area-block-info-30" data-number="30" id="block-highlight-area"></div>
+    <div class="area-block-info-31" data-number="31" id="block-highlight-area"></div>
+    <div class="area-block-info-32" data-number="32" id="block-highlight-area"></div>
+    <div class="area-block-info-33" data-number="33" id="block-highlight-area"></div>
+  </div>
 </div>
+		</div>
 	</main>
 	<footer></footer>
+
+	<div id="preview-popup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<a class="close" title="close" href="javascript:hidePreviewPopup()" data-dismiss="modal"></a>
+				<div class="modal-body">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="preview-tips" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<a class="close" title="close" href="javascript:hidePreviewTips()" data-dismiss="modal"></a>
+				<div class="modal-body">
+					<div class="index-logo index5">
+						<div class="container">
+							<div class="navbar-brand">
+								<h1 class="site-title">10 Minuten Webseite</h1>
+								<p class="site-description">Deine Website einfach und zeitsparend ohne Programmierkenntnisse!</p>
+							</div>
+						</div>
+					</div>
+					<section class="page-title-section">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="page-title">
+										<h2></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="all-content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<span class="tail-block"></span>
+	<div class="more__info more__absolute"><i class="close"></i></div>
+	<div
+		style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: transparent; z-index: 9999; display: none;"
+		class="disabled">
+	</div>
+
+	<script
+		src="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//vendor/components/jqueryui/jquery-ui.min.js">
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
 		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
 	</script>
-	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
 	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+	<script
+		src="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/icon-picker/js/jquery.fonticonpicker.min.js">
+	</script>
+	<script
+		src="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/magnific-popup/jquery.magnific-popup.js">
+	</script>
+	<script src="https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/scripts.js?ver=2.0.2">
+	</script>
 	<script src="js/app.min.js"></script>
+	<script type="text/javascript">
+		var open_panels = [];
+		var image_galleries =
+			"40,200,120,160,25,424,560,236,645,61,705,0,800,web-slider,624,626,55,152,146,235,415,595,135,522,180,205";
+		var tips = [{
+			"id": 670,
+			"title": "Impressum und Datenschutzerkl\u00e4rung",
+			"icon": "icon-quote-left"
+		}, {
+			"id": 400,
+			"title": "Kein Hosting \u2013 keine Domain \u2013 keine Webpr\u00e4senz!",
+			"icon": "icon-upload"
+		}, {
+			"id": 685,
+			"title": "Vorschau - Speichern - Bearbeiten",
+			"icon": "icon-help-circled"
+		}, {
+			"id": 546,
+			"title": "Website \u2013 Step-by-Step",
+			"icon": "icon-info-circled"
+		}];
+		var template_variant_id = parseInt("538");
+		var labels = {
+			form_err: "Füllen Sie die erforderlichen Felder aus",
+			select_file: "Füllen Sie die erforderlichen Felder aus",
+			draft_saved: "Entwurf ist gespeichert",
+			save_data: "Nicht gespeicherte Daten gehen verloren. Möchten Sie fortfahren?"
+		}
+	</script>
 </body>
 
 </html>
