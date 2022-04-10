@@ -93,6 +93,7 @@ body {
 }
 
 .logo--text {
+  text-decoration: none;
   color: #fff;
   font-size: 40px !important;
   font-weight: 500 !important;
@@ -214,7 +215,7 @@ body {
 
 .backlight-block {
   flex: 0 0 800px;
-  height: auto;
+  height: 975.21px;
 }
 @media only screen and (max-width: 1150px) {
   .backlight-block {
