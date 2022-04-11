@@ -402,12 +402,14 @@ input:checked + .form--slider:before {
   gap: 2px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  border-top: 2px solid rgba(0, 0, 0, 0.02);
 }
 
 .form--item {
   padding-right: 20px;
   padding-left: 20px;
   position: relative;
+  padding-top: 10px;
 }
 .form--item:last-child {
   padding-bottom: 25px;
@@ -631,12 +633,12 @@ textarea::-webkit-scrollbar-thumb {
   color: #dc3545;
   font-size: 14px;
   position: absolute;
-  top: 7px;
+  top: 18px;
   right: 42px;
 }
 
 .image-input-error {
-  top: 8px;
+  top: 17px;
   font-size: 12px;
   right: 185px;
 }
