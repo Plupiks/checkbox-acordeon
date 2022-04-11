@@ -1414,7 +1414,6 @@ a:hover {
 
 #menu {
   position: absolute;
-  pointer-events: none;
   width: 265px;
   height: 200vh;
   margin: -100px 0 0 0;
