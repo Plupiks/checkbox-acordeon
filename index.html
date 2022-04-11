@@ -80,8 +80,32 @@
   <a class="header--logo" href="https://10minutenwebseite.de/"><span class="logo--text">Minuten Webseite</span></a>
   <div class="container">
     <div class="header--body">
+      <div class="burger-menu-body">
+        <nav role='navigation'>
+          <div id="menuToggle">
+            <input id="showBtn" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a class="burger-menu-link1 burger-menu-link">
+                <li>Something</li>
+              </a>
+              <a class="burger-menu-link2 burger-menu-link">
+                <li>Something</li>
+              </a>
+              <a class="burger-menu-link3 burger-menu-link">
+                <li>Something</li>
+              </a>
+              <a class="burger-menu-link4 burger-menu-link">
+                <li>Something</li>
+              </a>
+            </ul>
+          </div>
+          <div class="backdrop"></div>
+        </nav>
+      </div>
       <button class="header--triangle"></button>
-      <p class="header--layout-name">Design-B03-demo</p>
       <div class="header--functions functions">
         <button class="functions--item functions--item-pc">
           <img src="img/header/preview-icon.png" alt="preview button">
@@ -98,23 +122,23 @@
 </header>
 	<main>
 		<div class="nav-box">
-			<a href="#win1" class="nav-button"><span>Designvorlagen</span>
-				<div class="icon"><i class="fa-solid fa-comment"></i></div>
+			<a class="nav-button"><span>Impressum und Datenschutzerklärung</span>
+				<div class="icon"><i class="fa-solid fa-comment" style="color: white;"></i></div>
 			</a>
-			<a href="#win2" class="nav-button"><span>Einzigartige Texte</span>
-				<div class="icon"><i class="fa-solid fa-comment-dots"></i></div>
+			<a class="nav-button"><span>Kein Hosting – keine Domain – keine Webpräsenz!</span>
+				<div class="icon"><i class="fa-solid fa-comment-dots" style="color: white;"></i></div>
 			</a>
-			<a href="#win3" class="nav-button"><span>Webhosting</span>
-				<div class="icon"><i class="fa-solid fa-comment-medical"></i></div>
+			<a class="nav-button"><span>Vorschau - Speichern - Bearbeiten</span>
+				<div class="icon"><i class="fa-solid fa-comment-medical" style="color: white;"></i></div>
 			</a>
-			<a href="#win4" class="nav-button"><span>Weitreichende technische Unterstützung</span>
-				<div class="icon"><i class="fa-solid fa-comments"></i></div>
+			<a class="nav-button"><span>Website – Step-by-Step</span>
+				<div class="icon"><i class="fa-solid fa-comments" style="color: white;"></i></div>
 			</a>
 		</div>
 		<div class="container container--main">
 			<div class="form-page">
 				<img class="backlight-block" src="img/blacklight-block-img.png" alt="blacklight block img" />
-				<aside class="forms-block forms">
+				<div class="forms-block forms">
 					<div class="form form-1">
 						<button class="form--header">
 							<label class="form--switch" type="button" data-bs-toggle="collapse"
@@ -128,21 +152,28 @@
 						</button>
 
 						<div class="form--items collapse" id="multiCollapseExample1">
-							<div class="form--item">
+							<form class="form--item">
 								<label class="input--title">E-Mail:</label>
 								<div class="form--input">
-									<input class="input light-box-1 light-box" type="email" placeholder="info@mustermail.de"
-										required="required">
+									<input class="input light-box-1 light-box form-control" id="error1" type="text"
+										placeholder="info@mustermail.de" required="required">
 									<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
 										alt="hint icon">
 								</div>
-							</div>
+								<label class="is-invalid1" for="error1">
+									This field is required.
+								</label>
+							</form>
 							<div class="form--item">
 								<label class="input--title">Telefon:</label>
 								<div class="form--input">
-									<input class="input light-box-2 light-box" type="tel" placeholder="+4901234567" required="required">
+									<input class="input light-box-2 light-box form-control" id="error2" type="text"
+										placeholder="+4901234567" required="required">
 									<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid2" for="error2">
+									This field is required.
+								</label>
 							</div>
 						</div>
 					</div>
@@ -162,10 +193,13 @@
 							<div class="form--item">
 								<label class="input--title">Firmenname:</label>
 								<div class="form--input">
-									<input class="input light-box-4 light-box" type="text" placeholder="Namen des Unternehmens"
-										required="required">
+									<input class="input light-box-4 light-box form-control" id="error3" type="text"
+										placeholder="Namen des Unternehmens" required="required">
 									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid1" for="error3">
+									This field is required.
+								</label>
 							</div>
 						</div>
 					</div>
@@ -185,23 +219,35 @@
 							<div class="form--item">
 								<label class="input--title">Menü 1:</label>
 								<div class="form--input">
-									<input class="input light-box-6 light-box" type="text" placeholder="Startseite" required="required">
+									<input class="input light-box-6 light-box form-control" id="error4" type="text"
+										placeholder="Startseite" required="required">
 									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid1" for="error4">
+									This field is required.
+								</label>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Menü 2:</label>
 								<div class="form--input">
-									<input class="input light-box-7 light-box" type="text" placeholder="Webhosting" required="required">
+									<input class="input light-box-7 light-box form-control" id="error5" type="text"
+										placeholder="Webhosting" required="required">
 									<img class="form--hint" id="form--hint4" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid2" for="error5">
+									This field is required.
+								</label>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Menü 3:</label>
 								<div class="form--input">
-									<input class="input light-box-8 light-box" type="text" placeholder="Kontakt" required="required">
+									<input class="input light-box-8 light-box form-control" id="error6" type="text" placeholder="Kontakt"
+										required="required">
 									<img class="form--hint" id="form--hint5" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid3" for="error6">
+									This field is required.
+								</label>
 							</div>
 						</div>
 					</div>
@@ -222,29 +268,38 @@
 								<label class="input--title">Foto:</label>
 								<div class="form--input">
 									<div class="input--with-icon ">
-										<input class="input light-box-10 light-box input-width" type="text" placeholder=""
-											required="required" readonly>
+										<input class="input image-input light-box-10 light-box input-width form-control" id="error7"
+											type="text" placeholder="" required="required">
 										<i class=""></i>
 									</div>
 									<button class="form--button">Datei Aaswählen</button>
 									<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid1 image-input-error" for="error7">
+									lade ein Foto hoch
+								</label>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Titel:</label>
 								<div class="form--input">
-									<input class="input input-width light-box-11 light-box" type="text" placeholder="10 Minuten Webseite"
-										required="required">
+									<input class="input input-width light-box-11 light-box form-control" id="error8" type="text"
+										placeholder="10 Minuten Webseite" required="required">
 									<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid2" for="error8">
+									This field is required.
+								</label>
 							</div>
 							<div class="form--item">
 								<label class="input--title">Untertitel:</label>
 								<div class="form--input">
-									<input class="input input-width light-box-12 light-box" type="text"
+									<input class="input input-width light-box-12 light-box form-control" id="error9" type="text"
 										placeholder="Deine Website einfach und zeitsparend oh" required="required">
 									<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
 								</div>
+								<label class="is-invalid3" for="error9">
+									This field is required.
+								</label>
 							</div>
 						</div>
 					</div>
@@ -266,68 +321,75 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width light-box-14 light-box" type="text" placeholder=""
-												required="required" readonly>
+											<input class="input input-width image-input-with-icon light-box-14 light-box form-control"
+												id="error10" type="text" placeholder="" required="required">
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
 										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid1 image-input-error" for="error10">
+										lade ein Foto hoch
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-15 light-box" type="text"
+										<input class="input input-width light-box-15 light-box form-control" id="error11" type="text"
 											placeholder="IHRE VORTEILE BEI UNS" required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid2" for="error11">
+										This field is required.
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Unteritel:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-16 light-box" type="text"
+										<input class="input input-width light-box-16 light-box form-control" id="error12" type=" text"
 											placeholder="Kein Einarbeiten in die Materie notwending" required="required">
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid3" for="error12">
+										This field is required.
+									</label>
 								</div>
 							</div>
 							<div class="section--block section--block-1">
 								<div class="form--item">
 									<label class="input--title">Text:</label>
 									<div class="form--textarea">
-										<textarea class="textarea light-box-17 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-										</textarea>
+										<textarea class="textarea light-box-17 light-box form-control" id="error13" required></textarea>
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid4" for="error13">
+										This field is required.
+									</label>
 								</div>
 							</div>
 							<div class="section--block section--block-2">
 								<div class="form--item">
 									<label class="input--title">Text:</label>
 									<div class="form--textarea">
-										<textarea class="textarea light-box-18 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-										</textarea>
+										<textarea class="textarea light-box-18 light-box form-control" id="error14" required></textarea>
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid5 input-invalid-textarea" for="error14">
+										This field is required.
+									</label>
 								</div>
 							</div>
 							<div class="section--block section--block-3">
 								<div class="form--item">
 									<label class="input--title">Text:</label>
 									<div class="form--textarea">
-										<textarea class="textarea light-box-19 dont-scroll light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-										</textarea>
+										<textarea class="textarea light-box-19 dont-scroll light-box form-control" id="error15"
+											required></textarea>
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid6 input-invalid-textarea2" for="error15">
+										This field is required.
+									</label>
 								</div>
 							</div>
 						</div>
@@ -350,29 +412,38 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width light-box-21 light-box" type="text" placeholder=""
-												required="required" readonly>
+											<input class="input input-width image-input-with-icon light-box-21 light-box form-control"
+												id="error16" type="text" placeholder="" required="required">
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
 										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid1 image-input-error" for="error16">
+										lade ein Foto hoch
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-22 light-box" type="text"
+										<input class="input input-width light-box-22 light-box form-control" id="error17" type="text"
 											placeholder="Die Erstellung mehrer Websites" required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid2" for="error17">
+										This field is required.
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Unteritel:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-23 light-box" type="text"
+										<input class="input input-width light-box-23 light-box form-control" id="error18" type="text"
 											placeholder="Ganz leicht mit Step-by-Step erstellt" required="required">
 										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid3" for="error18">
+										This field is required.
+									</label>
 								</div>
 							</div>
 							<div class="section--block section--block-1">
@@ -380,30 +451,39 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width light-box-24 light-box" type="text" placeholder=""
-												required="required" readonly>
+											<input class="input input-width image-input-with-icon light-box-24 light-box form-control"
+												id="error19" type="text" placeholder="" required="required">
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
 										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid4 image-input-error2" for="error19">
+										lade ein Foto hoch
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-25 light-box" type="text" placeholder="Titel"
-											required="required">
+										<input class="input input-width light-box-25 light-box form-control" id="error20" type="text"
+											placeholder="Titel" required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid5" for="error20">
+										This field is required.
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">E-Mail:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-26 light-box" type="email"
+										<input class="input input-width light-box-26 light-box form-control" id="error21" type="email"
 											placeholder="info@mustermail.de" required="required">
 										<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
 											alt="hint icon">
 									</div>
+									<label class="is-invalid6" for="error21">
+										This field is required.
+									</label>
 								</div>
 							</div>
 							<div class="section--block section--block-2">
@@ -411,29 +491,38 @@
 									<label class="input--title">Icon:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width light-box-27 light-box" type="text" placeholder=""
-												required="required" readonly>
+											<input class="input input-width image-input-with-icon light-box-27 light-box form-control"
+												id="error22" type="text" placeholder="" required="required">
 											<i class="fa-solid fa-image"></i>
 										</div>
 										<button class="form--button">Icon Aaswählen</button>
 										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid4 image-input-error3" for="error22">
+										lade ein Foto hoch
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Titel:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-28 light-box" type="text" placeholder="Titel"
-											required="required">
+										<input class="input input-width light-box-28 light-box form-control" id="error23" type="text"
+											placeholder="Titel" required="required">
 										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid7" for="error23">
+										This field is required.
+									</label>
 								</div>
 								<div class="form--item">
 									<label class="input--title">Telefon:</label>
 									<div class="form--input">
-										<input class="input input-width light-box-29 light-box" type="tel" placeholder="+4901234567"
-											required="required">
+										<input class="input input-width light-box-29 light-box form-control" id="error24" type="tel"
+											placeholder="+4901234567" required="required">
 										<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid8" for="error24">
+										This field is required.
+									</label>
 								</div>
 							</div>
 							<div class="section--block section--block-3">
@@ -441,18 +530,21 @@
 									<label class="input--title">Foto:</label>
 									<div class="form--input">
 										<div class="input--with-icon ">
-											<input class="input input-width light-box-30 light-box" type="text" placeholder=""
-												required="required" readonly>
+											<input class="input image-input input-width light-box-30 light-box form-control" id="error25"
+												type="text" placeholder="" required="required">
 											<i class=""></i>
 										</div>
 										<button class="form--button">Datei Aaswählen</button>
 										<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
 									</div>
+									<label class="is-invalid9 image-input-error4" for="error25">
+										lade ein Foto hoch
+									</label>
 								</div>
 							</div>
 						</div>
 					</div>
-				</aside>
+				</div>
 			</div>
 			<div class="highlights-boxes">
   <div class="container">
@@ -493,73 +585,8 @@
   </div>
 </div>
 		</div>
-		<div class="modal--body">
-			<!-- Модальное окно №1 -->
-			<a href="#x" class="overlay" id="win1"></a>
-			<div class="popup">
-				<a class="close" title="close" href="#close"></a>
-				<div class="title">Designvorlagen</div>
-				<p>Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-					die
-					Designs
-					sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern begeistern Sie
-					ihre
-					Kunden.
-					Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch unterwegs. Alle Vorlagen sind
-					für
-					Smartphones optimiert. Mit uns ist Ihre Website nicht nur günstig, sondern auch super einfach.</p>
+		<div class="modal--body"></div>
 
-				<p>Deine Webseite ohne teure Programmierer - So funktioniert's!!!</p>
-
-			</div>
-
-			<!-- Модальное окно №1 -->
-			<a href="#x" class="overlay" id="win2"></a>
-			<div class="popup">
-				<a class="close" title="close" href="#close"></a>
-				<div class="title">Einzigartige Texte</div>
-				<p>Sie sind schon vorbereitet und wissen was Sie wollen? Sie haben bereits fertige Texte? Super! Los geht’s!</p>
-
-				<p>Sie wissen nicht, was Sie schreiben sollen? Sie sind unsicher wie Sie Vorgehen müssen? Wir helfen gegen
-					Aufpreis.
-					Sie
-					erhalten einen Fragebogen zum Ausfüllen, der unseren Autoren hilft, die notwendigen Informationen über Ihr
-					Unternehmen
-					herauszufinden. Wir schreiben erstklassige Texte für Ihr Unternehmen, die bestens zur neuen Website passen.
-				</p>
-			</div>
-
-			<!-- Модальное окно №1 -->
-			<a href="#x" class="overlay" id="win3"></a>
-			<div class="popup">
-				<a class="close" title="close" href="#close"></a>
-				<div class="title">Webhosting</div>
-				<p>Ihre Website basiert auf der HTML Technologie. Für das Hosting ihrer Website benötigen Sie also keine teuren
-					spezialisierten Anbieter. Die einzige Anforderung an ihren zukünftigen Hostinganbieter Ihrerseits sollte ein
-					Upload
-					der
-					Daten per ftp sein. Suchen Sie sich einfach einen günstigen Webhosting auf dem aktuellen Markt heraus. Ihre
-					Seite
-					wird
-					garantiert perfekt angezeigt.</p>
-
-				<p>Sie können sich die Suche auch bequem sparen und unseren Partner-Service bei uns in Anspruch nehmen.</p>
-			</div>
-
-			<!-- Модальное окно №1 -->
-			<a href="#x" class="overlay" id="win4"></a>
-			<div class="popup">
-				<a class="close" title="close" href="#close"></a>
-				<div class="title">Weitreichende technische Unterstützung</div>
-				<p>Sie werden auch im Nachhinein Korrekturen auf ihrer Website vornehmen können. Sie brauchen keine speziellen
-					Programme.
-					Mit einem beliebigen Browser gelangen Sie in den Bearbeitungsmodus und passen ihre neuen Überschriften und
-					verbesserte
-					Texte nach Wunsch an.
-					Jederzeit besteht auch die Möglichkeit gegen Bezahlung unsere Hilfe durch Spezialisten in Anspruch zu nehmen.
-				</p>
-			</div>
-		</div>
 	</main>
 	<footer></footer>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
