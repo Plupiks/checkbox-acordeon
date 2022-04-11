@@ -220,8 +220,8 @@ body {
   top: 80px;
   right: 30px;
   background: #1c9ea8;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border-top: none;
   border-right: none;
@@ -1129,7 +1129,7 @@ input.active {
 
 .nav-box {
   position: fixed;
-  top: 30%;
+  top: 205px;
   left: 0;
   z-index: 12;
 }
@@ -1460,7 +1460,7 @@ a:hover {
   .burger-menu-body {
     display: block;
     top: -25px;
-    right: 1019px;
+    right: calc(100% - 100px);
   }
 }
 @media screen and (max-width: 768px) {
