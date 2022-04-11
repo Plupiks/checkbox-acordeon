@@ -331,6 +331,7 @@ body {
   display: inline-block;
   min-width: 35px;
   height: 18px;
+  pointer-events: none;
 }
 
 .form--switch input {
@@ -492,7 +493,7 @@ input:checked + .form--slider:before {
 @media only screen and (max-width: 1150px) {
   .input--with-icon {
     display: flex;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
   }
 }
 
