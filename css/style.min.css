@@ -406,6 +406,7 @@ input:checked + .form--slider:before {
 .form--item {
   padding-right: 20px;
   padding-left: 20px;
+  position: relative;
 }
 .form--item:last-child {
   padding-bottom: 25px;
@@ -579,12 +580,12 @@ textarea::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (max-width: 960px) {
-  .header::after {
+  .header::before {
     bottom: -24px;
   }
 }
 @media only screen and (max-width: 700px) {
-  .header::after {
+  .header::before {
     bottom: -26px;
   }
 }
@@ -624,117 +625,17 @@ textarea::-webkit-scrollbar-thumb {
   display: block;
 }
 
-.is-invalid1 {
+.is-invalid {
   display: none;
   color: #dc3545;
   font-size: 14px;
   position: absolute;
-  top: 4px;
-  right: 42px;
-}
-
-.is-invalid2 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 72px;
-  right: 42px;
-}
-
-.is-invalid3 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 138px;
-  right: 42px;
-}
-
-.is-invalid4 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 230px;
-  right: 42px;
-}
-
-.is-invalid5 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 295px;
-  right: 42px;
-}
-
-.is-invalid6 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 363px;
-  right: 42px;
-}
-
-.is-invalid7 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 520px;
-  right: 42px;
-}
-
-.is-invalid8 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 588px;
-  right: 42px;
-}
-
-.is-invalid9 {
-  display: none;
-  color: #dc3545;
-  font-size: 14px;
-  position: absolute;
-  top: 670px;
-  right: 42px;
-}
-
-.input-invalid-textarea {
-  top: 395px;
-  right: 42px;
-}
-
-.input-invalid-textarea2 {
-  top: 560px;
+  top: 7px;
   right: 42px;
 }
 
 .image-input-error {
   top: 8px;
-  font-size: 12px;
-  right: 185px;
-}
-
-.image-input-error2 {
-  top: 233px;
-  font-size: 12px;
-  right: 185px;
-}
-
-.image-input-error3 {
-  top: 458px;
-  font-size: 12px;
-  right: 185px;
-}
-
-.image-input-error4 {
-  top: 683px;
   font-size: 12px;
   right: 185px;
 }
@@ -1349,7 +1250,7 @@ a {
 }
 
 a:hover {
-  color: tomato;
+  color: #1c9ea8;
 }
 
 #menuToggle {
@@ -1363,7 +1264,6 @@ a:hover {
 }
 
 #menuToggle input {
-  display: block;
   width: 48px;
   height: 30px;
   position: absolute;
@@ -1413,8 +1313,9 @@ a:hover {
 }
 
 #menu {
+  display: none;
   position: absolute;
-  width: 265px;
+  width: 350px;
   height: 200vh;
   margin: -100px 0 0 0;
   padding: 50px;
@@ -1429,18 +1330,19 @@ a:hover {
   font-family: "MontserratAlternates";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #2c2c2c;
 }
 
 #menuToggle input:checked ~ ul {
+  display: block;
   transform: none;
   opacity: 1;
 }
 
 .backdrop {
-  position: fixed;
+  position: fixed !important;
   left: 0;
   top: 0;
   z-index: 2;
@@ -1450,10 +1352,22 @@ a:hover {
   opacity: 0;
   transition: opacity 0.1s ease-out;
   pointer-events: none;
+  position: relative;
 }
 
 .burger-menu-link li {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.burger-menu-link1::after {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: black;
 }
 
 @media only screen and (max-width: 1150px) {
