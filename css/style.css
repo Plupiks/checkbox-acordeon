@@ -465,6 +465,10 @@ input:checked + .form--slider:before {
   display: inline-block;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+}
+.form--hint:hover {
+  box-shadow: 0 0 10px 3px rgba(73, 122, 226, 0.19);
 }
 
 .input-width {
@@ -1198,6 +1202,11 @@ a.mb-title {
 }
 a.mb-title:hover {
   color: #74d0d4;
+}
+@media only screen and (max-width: 1150px) {
+  a.mb-title {
+    pointer-events: none;
+  }
 }
 @media only screen and (max-width: 650px) {
   a.mb-title {
