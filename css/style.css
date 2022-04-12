@@ -1100,6 +1100,10 @@ input.active {
   right: 2px;
 }
 
+.modal {
+  padding-top: 70px;
+}
+
 .modal-content {
   overflow: visible !important;
 }
