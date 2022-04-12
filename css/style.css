@@ -223,11 +223,11 @@ body {
 
 .triangle-mob {
   position: fixed;
-  top: 80px;
-  right: 30px;
+  top: calc(100% - 175px);
+  left: 30px;
   background: #1c9ea8;
-  width: 80px;
-  height: 80px;
+  width: 165px;
+  height: 165px;
   border-radius: 50%;
   border-top: none;
   border-right: none;
@@ -236,7 +236,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: 30px 30px;
+  background-size: 80px 80px;
 }
 .triangle-mob:hover {
   border-right: none;
