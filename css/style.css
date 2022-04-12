@@ -469,7 +469,7 @@ input:checked + .form--slider:before {
   transition: all 0.2s ease;
 }
 .form--hint:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.5);
 }
 
 .input-width {
