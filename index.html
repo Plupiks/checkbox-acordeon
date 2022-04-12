@@ -88,16 +88,16 @@
             <span></span>
             <span></span>
             <ul id="menu">
-              <a class="burger-menu-link1 burger-menu-link">
+              <a class="burger-menu-link" data-bs-toggle="modal" data-bs-target="#modal1">
                 <li>Impressum und Datenschutzerklärung</li>
               </a>
-              <a class="burger-menu-link2 burger-menu-link">
+              <a class="burger-menu-link" data-bs-toggle="modal" data-bs-target="#modal2">
                 <li>Kein Hosting – keine Domain – keine Webpräsenz!</li>
               </a>
-              <a class="burger-menu-link3 burger-menu-link">
+              <a class="burger-menu-link" data-bs-toggle="modal" data-bs-target="#modal3">
                 <li>Vorschau - Speichern - Bearbeiten</li>
               </a>
-              <a class="burger-menu-link4 burger-menu-link">
+              <a class="burger-menu-link" data-bs-toggle="modal" data-bs-target="#modal4">
                 <li>Website – Step-by-Step</li>
               </a>
             </ul>
@@ -122,17 +122,20 @@
 </header>
 	<main>
 		<div class="nav-box">
-			<a class="nav-button"><span>Impressum und Datenschutzerklärung</span>
-				<div class="icon"><i class="fa-solid fa-comment" style="color: white;"></i></div>
+			<a class="nav-button" data-bs-toggle="modal" data-bs-target="#modal1"><span>Impressum und
+					Datenschutzerklärung</span>
+				<div class="icon"><i class="fa-solid fa-quote-left" style="color: white;"></i></div>
 			</a>
-			<a class="nav-button"><span>Kein Hosting – keine Domain – keine Webpräsenz!</span>
-				<div class="icon"><i class="fa-solid fa-comment-dots" style="color: white;"></i></div>
+			<a class="nav-button" data-bs-toggle="modal" data-bs-target="#modal2"><span>Kein Hosting – keine Domain – keine
+					Webpräsenz!</span>
+				<div class="icon"><i class="fa-solid fa-upload" style="color: white;"></i></div>
 			</a>
-			<a class="nav-button"><span>Vorschau - Speichern - Bearbeiten</span>
-				<div class="icon"><i class="fa-solid fa-comment-medical" style="color: white;"></i></div>
+			<a class="nav-button" data-bs-toggle="modal" data-bs-target="#modal3"><span>Vorschau - Speichern -
+					Bearbeiten</span>
+				<div class="icon"><i class="fa-solid fa-circle-question" style="color: white;"></i></div>
 			</a>
-			<a class="nav-button"><span>Website – Step-by-Step</span>
-				<div class="icon"><i class="fa-solid fa-comments" style="color: white;"></i></div>
+			<a class="nav-button" data-bs-toggle="modal" data-bs-target="#modal4"><span>Website – Step-by-Step</span>
+				<div class="icon"><i class="fa-solid fa-circle-info" style="color: white;"></i></div>
 			</a>
 		</div>
 		<div class="container container--main">
@@ -585,7 +588,146 @@
   </div>
 </div>
 		</div>
-		<div class="modal--body"></div>
+		<div class="modals--body">
+			<!-- Modal1 -->
+			<div class="modal fade" id="modal1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal1"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-body mb">
+							<div class="mb-container">
+								<div class="mb--title-wrapper">
+									<a href="https://10minutenwebseite.de/" class="mb-title" id="modal1">10 Minuten Webseite</a>
+									<p class="mb-descr">
+										Deine Website einfach und zeitsparend ohne Programmierkenntnisse!
+									</p>
+								</div>
+							</div>
+							<div class="mb--name-section ns">
+								<h2 class="ns--title">Impressum und Datenschutzerklärung</h2>
+							</div>
+							<div class="mb--content">
+								<div class="mb-container mb-container-margin">
+									<div class="mb--content-body mb-cb">
+										<p class="mb-cb--text">
+											Unsere Vorlagen sind mit einer Extra Seite für <strong>"Impressum und
+												Datenschutzerklärung"</strong>
+											ausgestattet. Diese Seite
+											muss mit den notwendigen Inhalten gefüllt werden. Kennst du dich schon auf dem Gebiet gut aus?
+											Dann kannst du
+											dich gern um deine DSGVO selbstständig kümmern oder deine bereits vorhandene Datenschutzerklärung
+											übernehmen.
+											Fülle sie in der dafür vorhergesehenen Platz der Vorlage aus.
+										</p>
+										<ul class="mb-cb--list">
+											<li class="mb-cb--list-item">Hast du von DSVGO noch immer keine Ahnung oder noch mehr Angst? Wir
+												nehmen dir
+												diese Sorgen gerne ab und kümmern uns um die Erstellung deiner DSGVO-konformer
+												Datenschutzerklärung mit
+												unseren Partner eRecht24 Datenschutz-Generator.
+											</li>
+											<a class="mb-cb--list-item mb-cb--list-link"
+												href="https://10minutenwebseite.de/produkt/dsgvo-datenschutzerklaerung-erstellen/">DSGVO
+												Datenschutzerklärung erstellen
+											</a>
+										</ul>
+										<p class="mb-cb--text">In wenigen und sehr einfachen Schritten hast du günstig die DSGVO
+											Datenschutzerklärung
+											auf deiner Website!
+										</p>
+										<a href="https://www.e-recht24.de/" class="mb-cb--link">Partner eRecht24 Datenschutz-Generator</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal2 -->
+			<div class="modal fade" id="modal2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal2"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-body mb">
+							<div class="mb-container">
+								<div class="mb--title-wrapper">
+									<a href="https://10minutenwebseite.de/" class="mb-title" id="modal1">10 Minuten Webseite</a>
+									<p class="mb-descr">
+										Deine Website einfach und zeitsparend ohne Programmierkenntnisse!
+									</p>
+								</div>
+							</div>
+							<div class="mb--name-section ns">
+								<h2 class="ns--title">Kein Hosting – keine Domain – keine Webpräsenz!</h2>
+							</div>
+							<div class="mb--content">
+								<div class="mb-container mb-container-margin">
+									<div class="mb--content-body mb-cb">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal3 -->
+			<div class="modal fade" id="modal3" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal3"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-body mb">
+							<div class="mb-container">
+								<div class="mb--title-wrapper">
+									<a href="https://10minutenwebseite.de/" class="mb-title" id="modal1">10 Minuten Webseite</a>
+									<p class="mb-descr">
+										Deine Website einfach und zeitsparend ohne Programmierkenntnisse!
+									</p>
+								</div>
+							</div>
+							<div class="mb--name-section ns">
+								<h2 class="ns--title">Vorschau - Speichern - Bearbeiten</h2>
+							</div>
+							<div class="mb--content">
+								<div class="mb-container mb-container-margin">
+									<div class="mb--content-body mb-cb">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal4 -->
+			<div class="modal fade" id="modal4" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal4"
+				aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+					<div class="modal-content">
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-body mb">
+							<div class="mb-container">
+								<div class="mb--title-wrapper">
+									<a href="https://10minutenwebseite.de/" class="mb-title" id="modal1">10 Minuten Webseite</a>
+									<p class="mb-descr">
+										Deine Website einfach und zeitsparend ohne Programmierkenntnisse!
+									</p>
+								</div>
+							</div>
+							<div class="mb--name-section ns">
+								<h2 class="ns--title">Website – Step-by-Step</h2>
+							</div>
+							<div class="mb--content">
+								<div class="mb-container mb-container-margin">
+									<div class="mb--content-body mb-cb">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 	</main>
 	<footer></footer>

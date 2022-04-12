@@ -1,11 +1,3 @@
-@charset "UTF-8";
-@font-face {
-  font-family: Ruthie;
-  font-display: swap;
-  src: url("../fonts/Ruthie-Regular.woff2") format("woff2"), url("../fonts/Ruthie-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 @font-face {
   font-family: arial;
   font-display: swap;
@@ -17,6 +9,20 @@
   font-family: Verdana;
   font-display: swap;
   src: url("../fonts/Verdana.woff2") format("woff2"), url("../fonts/Verdana.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ruthie;
+  font-display: swap;
+  src: url("../fonts/Ruthie-Regular.woff2") format("woff2"), url("../fonts/Ruthie-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -1084,87 +1090,52 @@ input.active {
   justify-content: center;
 }
 
-.modal--body {
-  z-index: 22;
+.btn-close {
+  position: absolute;
+  top: 1px;
+  right: 2px;
 }
 
-/* Базовые стили слоя затемнения и модального окна  */
-.overlay {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 13;
-  display: none;
-  /* фон затемнения */
-  background-color: rgba(0, 0, 0, 0.75);
-  position: fixed;
-  /* фиксированное поцизионирование */
-  cursor: default;
-  /* тип курсара */
+.modal-content {
+  overflow: visible !important;
 }
 
-/* активируем слой затемнения */
-.overlay:target {
-  display: block;
+.mb-container {
+  padding: 48px;
+}
+@media only screen and (max-width: 500px) {
+  .mb-container {
+    padding: 10px;
+  }
 }
 
-/* стили модального окна */
-.popup {
+.mb-container-margin {
+  margin-top: -45px;
+}
+@media only screen and (max-width: 500px) {
+  .mb-container-margin {
+    margin-top: -7px;
+  }
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.mb--title-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  flex-direction: column;
   text-align: center;
-  top: -100%;
-  right: 0;
-  left: 50%;
-  font-size: 16px;
-  z-index: 20;
-  margin: 0;
-  max-width: 83%;
-  width: 840px;
-  /* фиксированное позиционирование, окно стабильно при прокрутке */
-  position: fixed;
-  padding: 30px;
-  background: #fefefe;
-  /* скругление углов */
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  /* внешняя тень */
-  -webkit-box-shadow: 0 5px 30px rgba(28, 158, 168, 0.22);
-  -moz-box-shadow: 0 5px 30px rgba(28, 158, 168, 0.22);
-  -ms-box-shadow: 0 5px 30px rgba(28, 158, 168, 0.22);
-  box-shadow: 0 5px 30px rgba(28, 158, 168, 0.22);
-  -webkit-transform: translate(-50%, -500%);
-  -ms-transform: translate(-50%, -500%);
-  -o-transform: translate(-50%, -500%);
-  transform: translate(-50%, -500%);
-  -webkit-transition: -webkit-transform 0.6s ease-out;
-  -moz-transition: -moz-transform 0.6s ease-out;
-  -o-transition: -o-transform 0.6s ease-out;
-  transition: transform 0.6s ease-out;
 }
 
-/* активируем модальный блок */
-.overlay:target + .popup {
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  top: 20%;
-}
-
-/* формируем кнопку закрытия */
-.close {
+.btn-close {
+  position: absolute;
   top: -10px;
   right: -10px;
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  padding: 0;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  width: 23px;
+  height: 23px;
+  z-index: 20;
   border-radius: 15px;
   background-color: #1c9ea8;
   text-align: center;
@@ -1175,45 +1146,147 @@ input.active {
   -ms-transition: all ease 0.8s;
   -o-transition: all ease 0.8s;
   transition: all ease 0.8s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.close:before {
-  position: absolute;
-  top: 13px;
-  left: 7px;
-  color: rgba(255, 255, 255, 0.9);
-  content: "+";
-  font-size: 26px;
-  line-height: 1px;
+  display: inline-block;
+  z-index: 10;
+  opacity: 1 !important;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+  background-image: none;
+}
+.btn-close:hover {
+  background-color: rgba(252, 21, 0, 0.836);
+  -webkit-transform: rotate(405deg);
+  -moz-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
+  -o-transform: rotate(405deg);
+  transform: rotate(405deg);
+}
+.btn-close::after {
+  position: absolute;
+  top: 15.4px;
+  left: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  content: "+";
+  font-size: 26px;
+  line-height: 1px;
 }
 
-.close:hover {
-  background-color: rgba(252, 20, 0, 0.8);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
+@media only screen and (max-width: 1150px) {
+  .btn-close {
+    top: 6px;
+    right: 10px;
+    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+  }
+  .btn-close::after {
+    top: 14.4px;
+    left: 6px;
+  }
+}
+a.mb-title {
+  color: #1c9ea8;
+  font-size: 75px !important;
+  font-weight: 500 !important;
+  font-family: Ruthie !important;
+  font-style: normal !important;
+  display: block;
+  margin: 0 0 -18px;
+}
+a.mb-title:hover {
+  color: #74d0d4;
+}
+@media only screen and (max-width: 650px) {
+  a.mb-title {
+    font-size: 56px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  a.mb-title {
+    font-size: 36px !important;
+    margin: 0 0 -10px;
+  }
 }
 
-.burger-menu {
-  height: 30px;
-  width: 30px;
-  background: url("../img/menu-icon.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  outline: none;
-  border: 0;
+.mb-descr {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: Raleway !important;
+  font-style: normal !important;
+  margin-bottom: 0;
+  text-align: center;
 }
 
+.mb--name-section {
+  background-color: #1c9ea8;
+  margin-top: -35px;
+  padding: 16px 0;
+  text-align: center;
+  color: #fff;
+}
+@media only screen and (max-width: 500px) {
+  .mb--name-section {
+    margin-top: -7px;
+  }
+}
+
+.ns--title {
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 500px) {
+  .ns--title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 385px) {
+  .ns--title {
+    font-size: 16px;
+  }
+}
+
+.mb-cb--text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.mb-cb--list {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  list-style-type: disc;
+  padding-left: 32px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+a.mb-cb--list-link {
+  color: #1c9ea8;
+}
+a.mb-cb--list-link:hover {
+  color: #74d0d4;
+}
+
+a.mb-cb--link {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #1c9ea8;
+  font-weight: 700;
+  font-size: 18px;
+}
+a.mb-cb--link:hover {
+  color: #74d0d4;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1150px) {
   .nav-button {
     display: none;
@@ -1244,6 +1317,16 @@ input.active {
   top: 0;
   right: 0px;
   z-index: 100;
+}
+
+.burger-menu {
+  height: 30px;
+  width: 30px;
+  background: url("../img/menu-icon.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  outline: none;
+  border: 0;
 }
 
 a {
@@ -1324,6 +1407,8 @@ a:hover {
   padding: 50px;
   padding-top: 200px;
   left: -30px;
+  overflow: scroll;
+  max-height: 100vh;
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -1360,17 +1445,6 @@ a:hover {
 
 .burger-menu-link li {
   margin-bottom: 50px;
-}
-
-.burger-menu-link1::after {
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  content: "";
-  width: 100px;
-  height: 2px;
-  background: black;
 }
 
 @media only screen and (max-width: 1150px) {
